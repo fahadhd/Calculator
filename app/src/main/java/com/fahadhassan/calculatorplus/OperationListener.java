@@ -3,9 +3,7 @@ package com.fahadhassan.calculatorplus;
 import android.view.View;
 import android.widget.EditText;
 
-/**
- * Created by admin on 10/15/2016.
- */
+
 public class OperationListener implements View.OnClickListener  {
     EditText calcText;
     String operation;

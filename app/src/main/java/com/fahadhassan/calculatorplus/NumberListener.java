@@ -21,14 +21,14 @@ public class NumberListener implements View.OnClickListener {
     }
 
 
-
     @Override
     public void onClick(View v) {
         if(calcText != null){
+            //Handle case if the solution is on screen ie don't add anything to it.
             if(activity.solutionVisible){
                 activity.solutionVisible = false;
                 activity.operationValueOne = number;
-                activity.operationValueTwo = 1;
+                activity.operationValueTwo = 0;
                 activity.operation = "";
 
                 calcText.setText(Long.toString(number));

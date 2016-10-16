@@ -5,7 +5,20 @@
     <string name="clear">ac</string>
     <string name="percent">%</string>
     <string name="change_sign">±</string>
+
     <string name="square_root">√</string>
+    <string name="squared">X²</string>
+    <string name="cubed">X³</string>
+
+    <string name="ln">ln</string>
+    <string name="log10">log10</string>
+
+    <string name="e">e</string>
+    <string name="pi">π</string>
+    <string name="cos">cos(x)</string>
+    <string name="sin">sin(x)</string>
+    <string name="tan">tan(x)</string>
+
 
     <!--/////////////////////Operation button strings////////////////////////-->
     <string name="add">+</string>

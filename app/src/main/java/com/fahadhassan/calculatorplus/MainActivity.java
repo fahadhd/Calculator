@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         calcText = (EditText) findViewById(R.id.calc_text);
 
-        setupNumberListeners();
-        setupOperationListeners();
         setupActionListeners();
+        setupOperationListeners();
+        setupNumberListeners();
     }
 
     public void setupActionListeners(){
@@ -39,6 +39,37 @@ public class MainActivity extends AppCompatActivity {
 
         TextView decimal = (TextView) findViewById(R.id.decimal);
         if(decimal != null) decimal.setOnClickListener(new ActionListener(this,calcText,"."));
+
+        TextView squareRoot = (TextView) findViewById(R.id.action_root);
+        if(squareRoot != null) squareRoot.setOnClickListener(new ActionListener(this,calcText,"√"));
+
+        TextView squared = (TextView) findViewById(R.id.action_squared);
+        if(squared != null) squared.setOnClickListener(new ActionListener(this,calcText,"X²"));
+
+        TextView cubed = (TextView) findViewById(R.id.action_cubed);
+        if(cubed != null) cubed.setOnClickListener(new ActionListener(this,calcText,"X³"));
+
+        TextView naturalLog = (TextView) findViewById(R.id.action_natural_log);
+        if(naturalLog != null) naturalLog.setOnClickListener(new ActionListener(this,calcText,"ln"));
+
+        TextView commonLog = (TextView) findViewById(R.id.action_log_base10);
+        if(commonLog != null) commonLog.setOnClickListener(new ActionListener(this,calcText,"log10"));
+
+        TextView sin = (TextView) findViewById(R.id.action_sin);
+        if(sin != null) sin.setOnClickListener(new ActionListener(this,calcText,"sin(x)"));
+
+        TextView cos = (TextView) findViewById(R.id.action_cos);
+        if(cos != null) cos.setOnClickListener(new ActionListener(this,calcText,"cos(x)"));
+
+        TextView tan = (TextView) findViewById(R.id.action_tan);
+        if(tan != null) tan.setOnClickListener(new ActionListener(this,calcText,"tan(x)"));
+
+        TextView pi = (TextView) findViewById(R.id.action_pi);
+        if(pi != null) pi.setOnClickListener(new ActionListener(this,calcText,"π"));
+
+        TextView e = (TextView) findViewById(R.id.action_e);
+        if(e != null) e.setOnClickListener(new ActionListener(this,calcText,"e"));
+
     }
 
     public void setupOperationListeners(){

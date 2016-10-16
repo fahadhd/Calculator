@@ -26,7 +26,8 @@
     <LinearLayout
         android:id="@+id/operation_buttons"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal"
         >
         <TextView
@@ -34,6 +35,12 @@
             style="@style/ActionButtonsLand"
             android:layout_below="@+id/calc_text"
             android:text="@string/clear"
+            />
+        <TextView
+            android:id="@+id/action_squared"
+            style="@style/ActionButtonsLand"
+            android:layout_below="@+id/calc_text"
+            android:text="@string/squared"
             />
         <TextView
             android:id="@+id/action_root"
@@ -60,15 +67,23 @@
     <LinearLayout
         android:id="@+id/number_buttons_row_1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal"
         >
         <TextView
-            android:id="@+id/action_squared"
+            android:id="@+id/action_sin"
             style="@style/ActionButtonsLand"
             android:layout_below="@+id/calc_text"
-            android:text="@string/clear"
+            android:text="@string/sin"
             />
+
+        <TextView
+            android:id="@+id/action_cubed"
+            style="@style/ActionButtonsLand"
+            android:text="@string/cubed"
+            />
+
         <TextView
             android:id="@+id/one"
             style="@style/NumberButtonsLand"
@@ -95,13 +110,19 @@
     <LinearLayout
         android:id="@+id/number_buttons_row_2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
         <TextView
-            android:id="@+id/action_cubed"
+            android:id="@+id/action_cos"
             style="@style/ActionButtonsLand"
             android:layout_below="@+id/calc_text"
-            android:text="@string/clear"
+            android:text="@string/cos"
+            />
+        <TextView
+            android:id="@+id/action_natural_log"
+            style="@style/ActionButtonsLand"
+            android:text="@string/ln"
             />
         <TextView
             android:id="@+id/four"
@@ -128,19 +149,26 @@
     <LinearLayout
         android:id="@+id/number_buttons_row_3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/action_natural_log"
+            android:id="@+id/action_tan"
             style="@style/ActionButtonsLand"
             android:layout_below="@+id/calc_text"
-            android:text="@string/clear"
+            android:text="@string/tan"
+            />
+
+        <TextView
+            android:id="@+id/action_log_base10"
+            style="@style/ActionButtonsLand"
+            android:text="@string/log10"
             />
         <TextView
             android:id="@+id/seven"
             style="@style/NumberButtonsLand"
-            android:layout_below="@+id/calc_text"
+
             android:text="7"
             />
         <TextView
@@ -162,14 +190,21 @@
     <LinearLayout
         android:id="@+id/number_buttons_row_4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/action_log_base10"
+            android:id="@+id/action_pi"
             style="@style/ActionButtonsLand"
             android:layout_below="@+id/calc_text"
-            android:text="@string/clear"
+            android:text="@string/pi"
+            />
+        <TextView
+            android:id="@+id/action_e"
+            style="@style/ActionButtonsLand"
+            android:layout_below="@+id/calc_text"
+            android:text="@string/e"
             />
 
         <TextView
