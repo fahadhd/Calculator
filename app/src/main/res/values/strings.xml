@@ -2,7 +2,7 @@
     <string name="app_name">Calculator Plus</string>
 
     <!--/////////////////////Action button strings////////////////////////-->
-    <string name="clear">ac</string>
+    <string name="clear">C</string>
     <string name="percent">%</string>
     <string name="change_sign">±</string>
 

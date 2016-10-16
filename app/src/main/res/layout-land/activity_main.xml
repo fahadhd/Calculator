@@ -30,23 +30,25 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         >
+
         <TextView
-            android:id="@+id/action_clear"
+            android:id="@+id/action_sin"
             style="@style/ActionButtonsLand"
             android:layout_below="@+id/calc_text"
-            android:text="@string/clear"
-            />
-        <TextView
-            android:id="@+id/action_squared"
-            style="@style/ActionButtonsLand"
-            android:layout_below="@+id/calc_text"
-            android:text="@string/squared"
+            android:text="@string/sin"
             />
         <TextView
             android:id="@+id/action_root"
             style="@style/ActionButtonsLand"
             android:layout_below="@+id/calc_text"
             android:text="@string/square_root"
+            />
+
+        <TextView
+            android:id="@+id/action_clear"
+            style="@style/ActionButtonsLand"
+            android:layout_below="@+id/calc_text"
+            android:text="@string/clear"
             />
         <TextView
             android:id="@+id/action_change_sign"
@@ -71,18 +73,20 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         >
-        <TextView
-            android:id="@+id/action_sin"
-            style="@style/ActionButtonsLand"
-            android:layout_below="@+id/calc_text"
-            android:text="@string/sin"
-            />
 
         <TextView
-            android:id="@+id/action_cubed"
+            android:id="@+id/action_cos"
             style="@style/ActionButtonsLand"
-            android:text="@string/cubed"
+            android:layout_below="@+id/calc_text"
+            android:text="@string/cos"
             />
+        <TextView
+            android:id="@+id/action_squared"
+            style="@style/ActionButtonsLand"
+            android:layout_below="@+id/calc_text"
+            android:text="@string/squared"
+            />
+
 
         <TextView
             android:id="@+id/one"
@@ -113,17 +117,19 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
+
         <TextView
-            android:id="@+id/action_cos"
+            android:id="@+id/action_tan"
             style="@style/ActionButtonsLand"
             android:layout_below="@+id/calc_text"
-            android:text="@string/cos"
+            android:text="@string/tan"
             />
         <TextView
-            android:id="@+id/action_natural_log"
+            android:id="@+id/action_cubed"
             style="@style/ActionButtonsLand"
-            android:text="@string/ln"
+            android:text="@string/cubed"
             />
+
         <TextView
             android:id="@+id/four"
             style="@style/NumberButtonsLand"
@@ -154,16 +160,15 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/action_tan"
+            android:id="@+id/action_pi"
             style="@style/ActionButtonsLand"
             android:layout_below="@+id/calc_text"
-            android:text="@string/tan"
+            android:text="@string/pi"
             />
-
         <TextView
-            android:id="@+id/action_log_base10"
+            android:id="@+id/action_natural_log"
             style="@style/ActionButtonsLand"
-            android:text="@string/log10"
+            android:text="@string/ln"
             />
         <TextView
             android:id="@+id/seven"
@@ -194,18 +199,19 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/action_pi"
-            style="@style/ActionButtonsLand"
-            android:layout_below="@+id/calc_text"
-            android:text="@string/pi"
-            />
+
         <TextView
             android:id="@+id/action_e"
             style="@style/ActionButtonsLand"
             android:layout_below="@+id/calc_text"
             android:text="@string/e"
             />
+        <TextView
+            android:id="@+id/action_log_base10"
+            style="@style/ActionButtonsLand"
+            android:text="@string/log10"
+            />
+
 
         <TextView
             android:id="@+id/zero"

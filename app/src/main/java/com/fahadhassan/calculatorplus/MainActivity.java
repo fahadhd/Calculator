@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void setupActionListeners(){
         TextView clear = (TextView) findViewById(R.id.action_clear);
-        if(clear != null) clear.setOnClickListener(new ActionListener(this,calcText,"ac"));
+        if(clear != null) clear.setOnClickListener(new ActionListener(this,calcText,"C"));
 
         TextView changeSign = (TextView) findViewById(R.id.action_change_sign);
         if(changeSign != null) changeSign.setOnClickListener(new ActionListener(this,calcText,"±"));

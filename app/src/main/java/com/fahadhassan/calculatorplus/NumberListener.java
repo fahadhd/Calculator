@@ -6,9 +6,6 @@ import android.widget.EditText;
 
 import java.util.HashMap;
 
-/**
- * Created by admin on 10/15/2016.
- */
 public class NumberListener implements View.OnClickListener {
     MainActivity activity;
     EditText calcText;
